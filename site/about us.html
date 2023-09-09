@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us - Watches Haven</title>
+
+    <!-- CSS -->
+    <style>
+        /* General styles for the page */
+        body {
+            background-color: blanchedalmond; /* Changed background color to black */
+            font-family: Calibri, sans-serif;
+            color: white; /* Changed text color to white */
+            text-align: center;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Styling for the main heading */
+        h2.about-heading {
+            font-size: 36px;
+            text-align: center;
+            font-family: "Times New Roman", serif;
+            border-bottom: 2px solid #ffffff; /* Changed border color to white */
+            padding: 10px 0;
+            margin: 0;
+            background-color: black;
+            color: white; /* Changed heading color to black */
+        }
+
+        /* Styling for the subheadings */
+        h3 {
+            font-size: 24px;
+            color: black; /* Changed heading color to white */
+            text-decoration: underline;
+            margin-bottom: 10px;
+            margin-top: 30px;
+        }
+
+        /* Styling for the paragraphs */
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #ffffff; /* Changed text color to white */
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        /* Styling for strong elements */
+        strong {
+            font-weight: bold;
+        }
+
+        /* Styling for the thank you message */
+        h3.thank-you {
+            color: #009900;
+            font-family: "Times New Roman", serif;
+            margin-top: 30px;
+        }
+
+        /* Container styles */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #000000; /* Changed background color to black */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            position: relative; /* Added position property */
+        }
+
+        /* Floating light effect on side borders */
+        .container:before,
+        .container:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 15px;
+            background-color: #c7a9f8; /* Light purple color */
+            z-index: -1;
+            animation: floatEffect 3s infinite alternate; /* Floating animation */
+        }
+
+        .container:before {
+            left: -15px;
+            transform: skew(0deg, -15deg); /* Skew effect */
+        }
+
+        .container:after {
+            right: -15px;
+            transform: skew(0deg, 15deg); /* Skew effect */
+        }
+
+        /* Floating animation keyframes */
+        @keyframes floatEffect {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="about-heading">ABOUT US</h2>
+        <p>Learn about our company and what sets us apart in the watch industry.</p>
+
+        <!-- Rest of the content... -->
+
+        <h3>As Real As It Gets</h3>
+        <p>Watch Haven deals only in authentic and genuine branded watches. Every watch that gets sold on our website, whether it is brand new or like new, can be traced back to the original manufacturer of the brand. There is no difference between the product you see on the brand's website and the product we deliver to your doorstep, since both come from the same source. So, you can trust us when we say, it's the real thing.</p>
+
+        <h3>The Biggest Bang for your Buck</h3>
+        <p>Do you know why? It's because we get our <strong>brand-new</strong> watches from the brand's outsourced manufacturers or authorized dealers. Since they don’t come with an international brand warranty, we are able to snag them up at much lower prices. Oh, and sometimes we also get our hands on promotional watches that come without packaging. We obtain them at steep discounts and sell them as <strong>like new</strong>.</p>
+
+        <p>In a nutshell, we get favorable prices on these products, and then pass on the savings to the customer. It's that simple.</p>
+
+        <h3>Worry Less - Shop More</h3>
+        <p>Since we do not follow the manufacturer's suggested retail prices (MSRP) guide, we are not authorized to provide a manufacturer's warranty. But fear not, we understand that having a warranty is a major concern when purchasing a watch. Therefore, we have established a warranty policy that will surely put you at ease. A 1-year Watch Haven warranty and free cash on delivery come standard with all your purchases. In addition, you can get your product exchanged or refunded within 7 days if you find a defect.</p>
+
+        <h3>Creating Fans - Not Customers</h3>
+        <p>We at Watch Haven treat customers like royalty. Once you buy from us, you're officially part of the kingdom. We are proud of our world-class customer assistance team that guides you through every query and concern. We'll address your issues and do our level best to earn your trust and satisfaction. Should you have any comments or questions, we are available to assist via phone, instant messenger, live chat, or email!</p>
+
+        <p>An uncompromising effort to exceed expectations. An incredible focus on the customer's needs. And the most competitive pricing you can find online. That's what we're all about.</p>
+
+        <h3 class="thank-you" style="color: white;">THANK YOU FOR VISITING OUR SITE :)</h3>
+    </div>
+</body>
+
+</html>

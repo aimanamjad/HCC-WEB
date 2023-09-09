@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: cambria, cochin, georgia, times, 'times new roman', serif;
+      box-sizing: border-box;
+      display: flex;
+      background: white;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow: hidden;
+      color: white; /* Set text color to white for all elements */
+    }
+
+    .container {
+      position: relative;
+      width: 350px;
+      height: 500px;
+      background: rgba(0, 0, 0, 0.75);
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-inline: 32px;
+      overflow: hidden;
+    }
+
+    .container::before,
+    .container::after {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 360px; /* Adjust the width to control the side border thickness */
+      background: conic-gradient(transparent, transparent, transparent, #d400d4);
+      border-radius: 50%; /* Make it a circle */
+      pointer-events: none; /* Avoid interfering with form inputs */
+      top: 0;
+    }
+
+    .container::before {
+      left: -180px; /* Place it on the left side */
+      animation: animate 4s linear infinite;
+      animation-delay: -2s;
+    }
+
+    .container::after {
+      right: -180px; /* Place it on the right side */
+      animation: animate 4s linear infinite;
+    }
+
+    @keyframes animate {
+      0% {
+        transform: rotate(0);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* ... Rest of the CSS ... */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="form-box">
+      <div class="form">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us for any inquiries or to place an order.</p>
+        <form action="/Mailing list.php" method="post">
+          <fieldset>
+            <legend>JOIN OUR EMAIL LIST</legend> <!-- Removed inline style for legend text color -->
+            <p>Get news about the brand such as the latest and upcoming launch of our watches releases sent to your inbox</p>
+            <ul>
+              <li>
+                <div class="form-item">
+                  <label for="first-name">Name:</label>
+                  <input type="text" name="first-name" id="first-name">
+                </div>
+              </li>
+              <li>
+                <div class="form-item">
+                  <label for="email">Email:</label>
+                  <input type="text" name="email" id="email">
+                </div>
+              </li>
+              <li>
+                <div class="form-item">
+                  <label>Favorite Watch:</label> <!-- Removed inline style for label text color -->
+                  <input type="text" name="favorite-name" maxlength="50">
+                </div>
+              </li>
+              <li>
+                <div class="form-item">
+                  <input  type="submit" value="Submit">
+                </div>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+<script>
+  // Get the form element
+const form = document.querySelector('form');
+// Add an event listener to the form
+form.addEventListener('submit', (event) => {
+  // Prevent the default form submission
+  event.preventDefault();
+  // Get the form data
+  const formData = new FormData(form);
+  // Send the form data to the
+</script>
